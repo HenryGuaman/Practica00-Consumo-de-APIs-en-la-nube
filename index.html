@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <title>Tablas</title>
+    <link href="style.css" rel = "stylesheet">
     <script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
 
     <input type="text" value="" id="titulo"><br><br>
-    <input type="button" value="Mostrar Datos" onclick="buscarPeliculaPorTitulo()"><br><br>
+    <input type="button" value="Mostrar Datos" id="md" onclick="buscarPeliculaPorTitulo()"><br><br>
 
     <table>
             <tr>
@@ -15,9 +16,9 @@
                     <table id="mia" class="dat">
                         <thead>
                         <tr>
-                            <th></th>
+                            <th>ID</th>
                             <th>TITULO</th>
-                            <th>AÑO</th>
+                            <th>ANIO</th>
                             <th>TIPO</th>
                             <th>POSTER</th>
                         </tr>

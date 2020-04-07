@@ -2,7 +2,7 @@ function buscarPeliculaPorTitulo(){
     
     var titulo= document.getElementById("titulo").value;
     var detalles="";
-    if (titulo = ""){
+    if (titulo == ""){
         detalles+= "<tr>"+
         "<td colspan='5'> Sin informacion disponible...</td>"+
         "</tr>";
@@ -22,10 +22,11 @@ function buscarPeliculaPorTitulo(){
                     // Log each movie's info
                     console.log(movie.Title)
                     detalles += "<tr>"+
-                        "<td><a href='#' onclick=\"buscarPeliculaPorId('" + movie.imdbID + "')\"><td>"+
-                        "<td>"+movie.Title+"<td>"+
-                        "<td>"+movie.Year+"<td>"+
-                        "<td>"+movie.Type+"<td>"+
+                        //"<td><a href='#' onclick=\"buscarPeliculaPorId('" + movie.imdbID + "')\"><td>"+
+                        "<td>"+movie.imdbID+
+                        "<td>"+movie.Title+
+                        "<td>"+movie.Year+
+                        "<td>"+movie.Type+
                         "<td><img src="+ movie.Poster +"><td>"+
                         "</tr>";
                 });
@@ -33,10 +34,8 @@ function buscarPeliculaPorTitulo(){
             }
 
         };
-        xmlhttp.open("GET","http://www.omdbapi.com/?apikey=db0a9315&s" + titulo + "&plot=full",true);
+        xmlhttp.open("GET","http://www.omdbapi.com/?&apikey=4e291117&s=" + titulo + "&plot=full",true);
         xmlhttp.send();
     }
-    return false;
-
-    
+    return false;  
 }
