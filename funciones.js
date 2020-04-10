@@ -27,7 +27,7 @@ function buscarPeliculaPorTitulo(){
                         "<td>"+movie.Title+
                         "<td>"+movie.Year+
                         "<td>"+movie.Type+
-                        "<td><img src="+ movie.Poster +"><td>"+
+                        "<td><img src="+ movie.Poster +
                         "</tr>";
                 });
                 document.getElementById("informacion").innerHTML = detalles;

@@ -5,7 +5,12 @@ img{
   table {
     border: silver 5px solid;
   }
- 
+  tbody {
+    border: silver 5px solid;
+  }
+  tr {
+    border: silver 5px solid;
+  }
   td {
     border: silver 5px solid;
   }
