@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tablas</title>
+    <title>Peliculas</title>
     <link href="style.css" rel = "stylesheet">
     <script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
+    <div class="uno">
+        <input type="text" value="" id="titulo" class="cent"><br><br>
+        <input type="button" value="Mostrar Datos" id="md" onclick="buscarPeliculaPorTitulo()"><br><br>
+    </div>
+    <div class="contenedor2">
+        <table>
+                <tr>
+                    <td>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>ID</th>
+                                <th>TITULO</th>
+                                <th>ANIO</th>
+                                <th>TIPO</th>
+                                <th>POSTER</th>
+                            </tr>
+                            </thead>
+                            <tbody id = "informacion">
 
-    <input type="text" value="" id="titulo"><br><br>
-    <input type="button" value="Mostrar Datos" id="md" onclick="buscarPeliculaPorTitulo()"><br><br>
+                            </tbody>
+                        </table>   
+                    </td>         
+                </tr>
+                <tr>
+                    <div id="detalles">
 
-    <table>
-            <tr>
-                <td>
-                    <table id="mia" class="dat">
-                        <thead>
-                        <tr>
-                            <th></th>
-                            <th>ID</th>
-                            <th>TITULO</th>
-                            <th>ANIO</th>
-                            <th>TIPO</th>
-                            <th>POSTER</th>
-                        </tr>
-                        </thead>
-                        <tbody id = "informacion">
-
-                        </tbody>
-                    </table>   
-                </td>         
-            </tr>
-            <tr>
-                <div id="detalles">
-
-                </div>
-            </tr>
-    </table>        
+                    </div>
+                </tr>
+        </table>
+    </div>        
 </body>
 </html>

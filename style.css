@@ -1,17 +1,53 @@
 img{
-    width: 50px; height: 50px;
-  }
+    
+  width :200px ;
+  height:200px;
+  border-radius: 10px;  
+}
+  
+.cent{
+    text-align: center;
+}
+html{
 
-  table {
-    border: silver 5px solid;
-  }
-  tbody {
-    border: silver 5px solid;
-  }
-  tr {
-    border: silver 5px solid;
-  }
-  td {
-    border: silver 5px solid;
-  }
- 
+  width: 100%;
+  height: 100%;
+  border: rgb(red, green, blue);
+  overflow-y: scroll;
+}
+body{
+  border-radius: 10em;
+  background-color: rgb(209, 125, 241);
+  border-bottom-width: 0.2em;
+}
+p{
+  margin-bottom: 20px;
+  line-height: 28px;
+  font-size: 16 px;
+  color: honeydew;
+}
+.uno {
+  font-family: fantasy;    
+  text-align: center;
+  font-size: 24px;
+}
+.dat 
+{
+    width: 100%;      
+}
+.dat th,td,tr{
+  width: 15%;    
+  text-align: justify;
+}
+.contenedor2{ 
+  border-radius: 50em;
+   text-align: center;
+  margin: 50px auto;
+  width :1200px ;
+  height:900px;
+  padding:20px;
+  background: seashell;
+  overflow: auto;
+  border-radius: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
