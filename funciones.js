@@ -22,7 +22,7 @@ function buscarPeliculaPorTitulo(){
                     // Log each movie's info
                     console.log(movie.Title)
                     detalles += "<tr>"+
-                        "<td><a href='#' onclick=\"buscarPeliculaPorId('" + movie.imdbID + "')\">Mas Detalles"+
+                        "<td><a href='#' onclick=\"buscarPeliculaPorId('" + movie.imdbID + "')\">Acerca de..."+
                         "<td>"+movie.imdbID+
                         "<td>"+movie.Title+
                         "<td>"+movie.Year+
@@ -79,21 +79,14 @@ function buscarPeliculaPorId(id){
                      +    "<h3>Production:"+data.Production+"</h3>"
                      +    "<h3>Website:"+data.Website+"</h3>"
                      +    "<h3>Response:"+data.Response+"</h3>"
-
-                 /* for(x in data){
-                      detalles+=                       
-                       "<tr>"+data[x] +"</tr>" +"<br>" 
-                       "</tr>"                     ;       
-                       }      */ 
-              }
+              }   
               
-              var imagen= "<img src=\'"+data.Poster+"'/ ></img> "     
-              
-              document.getElementById("detalles").innerHTML=detalles;
-              document.getElementById("imagenes").innerHTML=imagen;
+                var imagen = "<img src=\'" + data.Poster + "'/ ></img> "
+                document.getElementById("detalles").innerHTML = detalles;
+                document.getElementById("imagenes").innerHTML = imagen;
 
           }; 
-          xmlhttp.open("GET","http://www.omdbapi.com/?&apikey=4e291117&s="+ id +"&plot=full",true);
+          xmlhttp.open("GET","http://www.omdbapi.com/?&apikey=4e291117&i="+ id +"&plot=full",true);
           
           xmlhttp.send();
       }
