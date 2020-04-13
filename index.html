@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <title>Peliculas</title>
     <link href="style.css" rel = "stylesheet">
     <script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
-    <h1>Peliculas para tus gustos</h1>
+    <h1>Peliculas para tus gustos en esta cuarentena *.* </h1>
     <div class="uno">
-        <input type="text" value="buscalo aqui" id="titulo" class="cent"><br><br>
-        <input type="button" value="Mostrar Datos" id="md" onclick="buscarPeliculaPorTitulo()"><br><br>
+        <input type="text" name = "" placeholder="Busque su pelicula favorita" size="40" id="titulo" class="cent"><br><br>
+        <input type="button" name="" value="Mostrar Datos" id="buscar" onclick="buscarPeliculaPorTitulo()"><br><br>
     </div>
     <div class="contenedor2">
         <table>
@@ -25,19 +25,24 @@
                                 <th>TIPO</th>
                                 <th>POSTER</th>
                             </tr>
-                            </thead>
                             <tbody id = "informacion">
-
                             </tbody>
+                            </thead>
+                            
                         </table>   
                     </td>         
                 </tr>
-                <tr>
-                    <div id="detalles">
-
-                    </div>
-                </tr>
         </table>
-    </div>        
+        
+    </div>   
+    <div>
+        <table>
+            <tr>
+                <div id="detalles">
+                    
+                </div>
+            </tr>
+        </table>
+    </div>     
 </body>
 </html>
